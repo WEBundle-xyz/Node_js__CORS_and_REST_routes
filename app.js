@@ -8,19 +8,20 @@ const server = http.createServer((request, response) => {
   });
   request.on('end', () => {
     body = Buffer.concat(body).toString();
-    console.log(body);
+    let userName = 'No user';
+    if (body) {
+      userName = body.split('=')[1];
+    }
+    response.setHeader('Content-Type', 'text/html');
+    response.write(
+      `<h1>Hi ${userName}</h1><form method="POST" action="/"><input name="username" type="text"><button type="submit">Send</button></form>`
+    );
+    response.end();
   });
-
-  response.setHeader('Content-Type', 'text/html');
-  response.write(
-    '<form method="POST" action="/"><input name="username" type="text"><button type="submit">Send</button></form>'
-  );
-  response.end();
 });
 
 server.listen(3000);
 
-/*
-
+/* 
 
 */
