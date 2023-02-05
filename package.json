@@ -1,0 +1,22 @@
+{
+  "name": "nodeapi",
+  "version": "1.0.0",
+  "description": "#### React.js / framer-motion / and much more",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WEBundle-xyz/Node_js__CORS_and_REST_routes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WEBundle-xyz/Node_js__CORS_and_REST_routes/issues"
+  },
+  "homepage": "https://github.com/WEBundle-xyz/Node_js__CORS_and_REST_routes#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
