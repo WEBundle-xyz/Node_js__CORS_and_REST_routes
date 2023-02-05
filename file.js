@@ -16,10 +16,3 @@ fs.writeFile('user-data.txt', 'username=Stef', (err) => {
   }
 });
 
-/*
-
-and I saw one it s main fucntionality
-are available globaly and
-in node js you need to tell me what u need and now let s move 
-
-*/
